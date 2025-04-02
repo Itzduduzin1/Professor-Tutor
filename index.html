@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/img/Logo Professor Tutor.png " type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Login - Professor Tutor</title>
+    <script src="Assets/js/script.js"></script>
+    <link rel="stylesheet" href="Assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="https://plataforma.catvante.com.br/static/media/catvante-logo.496513ba08931c74f184.png" alt="Ícone de Livro">
+            </div>
+            <h2>Professor Tutor</h2>
+            <p class="subtitle">Acesse sua conta para fazer seu Professor Tutor.</p>
+            <form>
+                <div class="input-box">
+                    <span class="fa-solid fa-id-card icon"></span>
+                    <input type="text" id="ra" placeholder=" " required>
+                    <label for="ra">Digite seu RA</label>
+                    <button type="button" class="clear-btn" onclick="clearInput('ra')">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="input-box">
+                    <span class="fa-solid fa-lock icon"></span>
+                    <input type="password" id="password" placeholder=" " required>
+                    <label for="password">Digite sua senha</label>
+                    <button type="button" class="toggle-password" onclick="togglePassword()">
+                        <i class="fa-solid fa-eye"></i>
+                    </button>
+                </div>
+            
+                <button type="submit" class="btn">Entrar</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

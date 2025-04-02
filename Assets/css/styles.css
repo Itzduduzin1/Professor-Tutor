@@ -1,0 +1,133 @@
+body {
+    background-color: #0a0f1e;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.login-box {
+    background: rgba(10, 25, 47, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 128, 0.6);
+    backdrop-filter: blur(10px);
+    width: 320px;
+    transition: 0.3s ease-in-out;
+}
+
+.logo img {
+    width: 200px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 128, 0.7));
+}
+
+h2 {
+    color: #00ff80;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.input-box {
+    position: relative;
+    background: rgba(255, 255, 255, 0);
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    border: 1px solid rgba(0, 255, 128, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.input-box:focus-within {
+    box-shadow: 0 0 10px rgba(0, 255, 128, 0.9);
+    border-color: #00ff80;
+}
+
+.input-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    background: rgba(10, 25, 47, 1);
+    padding: 0 5px;
+    color: #00ff80;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
+    top: -2px;
+    border-left: 2px solid #00ff80;
+    border-right: 2px solid #00ff80;
+}
+
+.icon {
+    color: #00ff80;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.input-box button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+.input-box button:hover {
+    color: #00ff80;
+}
+
+.btn {
+    background: #00ff80;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 255, 128, 0.7);
+}
+
+.btn:hover {
+    background: #00cc66;
+    box-shadow: 0 0 15px rgba(0, 255, 128, 1);
+}
